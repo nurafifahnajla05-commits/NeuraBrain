@@ -672,6 +672,45 @@ footer .credit { font-size: 12px; opacity: 0.6; margin-top: 15px; }
     section { padding: 50px 15px; }
 }
 </style>
+    /* BUSINESS PITCH SECTION */
+#pitch {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f0e6ff 0%, #e6f0ff 100%);
+}
+#pitch .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#pitch h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #4a3a8a;
+    font-weight: bold;
+}
+#pitch .pitch-subtitle {
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(74, 58, 138, 0.2);
+    margin-top: 30px;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 </head>
 <body>
 
@@ -684,6 +723,7 @@ footer .credit { font-size: 12px; opacity: 0.6; margin-top: 15px; }
         <li><a href="#illusion">Illusion</a></li>
         <li><a href="#memory">Memory</a></li>
         <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#pitch">Business Pitch</a></li>a
     </ul>
 </nav>
 
@@ -1305,6 +1345,22 @@ function restartQuiz() {
 // Initialize quiz
 loadQuestion();
 </script>
+<!-- BUSINESS PITCH SECTION -->
+<section id="pitch">
+    <div class="container">
+        <h2>💡 Our Business Pitch</h2>
+        <p class="pitch-subtitle">Introducing NeuraBrain — a neuroscience-inspired platform supporting individuals with dyslexia, dyscalculia, and dysgraphia.</p>
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/dz8nSHv2d6Q"
+                title="NeuraBrain Business Pitch"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
 
 </body>
 </html>
